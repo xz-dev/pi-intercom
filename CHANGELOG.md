@@ -4,6 +4,9 @@ All notable changes to the `pi-intercom` extension will be documented in this fi
 
 ## [Unreleased]
 
+### Fixed
+- Hand busy interactive inbound messages directly to Pi's safe steering queue instead of waiting for aggregate idle, preventing stale coordination from appearing hours after it was received. See #86.
+
 ## [0.9.2] - 2026-08-03
 
 ### Fixed
